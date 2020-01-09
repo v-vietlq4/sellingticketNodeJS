@@ -1,0 +1,44 @@
+{{#section 'section'}}
+<section id="form">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-1">
+                <div class="signup-form">
+                    <!--sign up form-->
+                    <h2>New User Signup!</h2>
+                    <form action="/register" id="signup" method="POST">
+                        <input name="userName" type="text" placeholder="User Name" id="username" />
+                        <span class="error" id="errorsignupuser">test</span>
+                        <input name="firstName" type="text" placeholder="First Name" id="firstname" />
+                        <span class="error" id="errorsignupfirstname">test</span>
+                        <input name="lastName" type="text" placeholder="Last Name" id="lastname" />
+                        <span class="error" id="errorsignuplastname">test</span>
+                        <input name="email" type="email" placeholder="Email Address" id="email" />
+                        <span class="error" id="errorsignupemail">test</span>
+                        <input name="adress" type="address" placeholder="Address" id="add" />
+                        <span class="error" id="errorsignupadd">test</span>
+                        <input name="password" type="password" placeholder="Password" id="pass" />
+                        <span class="error" id="errorsignuppass">test</span>
+                        <input type="password" placeholder="Re-Password" id="repass" />
+                        <span class="error" id="errorsignuprepass">test</span>
+                        <!--secret key: 6Lf7DcwUAAAAACxbqa9fItT3jI9OJGt81xM7PMFX-->
+                        <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lf7DcwUAAAAAHcHyUBRA2TBZwnoxl9AUYpPCWsS"
+                            data-callback="verifyCaptcha"></div>
+                        <span class="error" id="errorsignuprecaptcha">test</span>
+
+                        <button type="submit" class="btn btn-default">Sign Up</button>
+
+                    </form>
+                </div>
+                <!--/sign up form-->
+            </div>
+        </div>
+    </div>
+</section>
+{{/section}}
+
+{{#section 'js'}}
+<script src="/public/js/signup.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+{{/section}}

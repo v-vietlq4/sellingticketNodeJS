@@ -1,0 +1,53 @@
+{{#section 'js'}}
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/external/jquery-1.10.1.min.js"><\/script>')</script>
+<!-- Migrate -->
+<script src="js/external/jquery-migrate-1.2.1.min.js"></script>
+<!-- Bootstrap 3-->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+<!-- Mobile menu -->
+<script src="js/jquery.mobile.menu.js"></script>
+<!-- Select -->
+<script src="js/external/jquery.selectbox-0.2.min.js"></script>
+<!-- Form element -->
+<script src="js/external/form-element.js"></script>
+<!-- Form validation -->
+<script src="js/form.js"></script>
+
+<!-- Custom -->
+<script src="js/custom.js"></script>
+{{/section}}
+
+{{#section 'wrap'}}
+<div class="wrapper">
+
+    <!-- Main content -->
+    <form id="login-form" class="login" method='get' novalidate=''>
+        <p class="login__title">sign in <br><span class="login-edition">welcome to A.Movie</span></p>
+
+        <div class="social social--colored">
+            <a href='#' class="social__variant fa fa-facebook"></a>
+            <a href='#' class="social__variant fa fa-twitter"></a>
+            <a href='#' class="social__variant fa fa-tumblr"></a>
+        </div>
+
+        <p class="login__tracker">or</p>
+
+        <div class="field-wrap">
+            <input type='email' placeholder='Email' name='user-email' class="login__input">
+            <input type='password' placeholder='Password' name='user-password' class="login__input">
+
+            <input type='checkbox' id='#informed' class='login__check styled'>
+            <label for='#informed' class='login__check-info'>remember me</label>
+        </div>
+
+        <div class="login__control">
+            <button type='submit' class="btn btn-md btn--warning btn--wider">sign in</button>
+            <a href="#" class="login__tracker form__tracker">Forgot password?</a>
+        </div>
+    </form>
+
+    <div class="clearfix"></div>
+</div>
+{{/section}}
