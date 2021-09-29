@@ -28,7 +28,7 @@
     "express-handlebars-sections": "^1.0.1",
     "express-session": "^1.17.0",
     "full-text-search-light": "0.0.18",
-    "i": "^0.3.6",
+    "i": "^0.3.7",
     "moment": "^2.24.0",
     "mysql2": "^2.0.2",
     "nodemon": "^2.0.2",
